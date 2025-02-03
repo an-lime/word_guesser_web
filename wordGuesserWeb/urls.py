@@ -1,5 +1,6 @@
-from django.urls import path, include
+from django.urls import path, include, URLResolver
 
-urlpatterns = [
-    path('blog/', include('main.urls'))
+urlpatterns: list[URLResolver] = [
+    path('', include('main.urls', namespace='main')),
+    path('user/', include('users.urls', namespace='user')),
 ]

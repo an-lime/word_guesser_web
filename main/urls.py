@@ -1,7 +1,7 @@
-from django.urls import path
+from django.urls import path, URLPattern
 from main import views
 
-urlpatterns = [
+app_name = 'main'
+urlpatterns: list[URLPattern] = [
     path("", views.index, name="index"),
-    path("about/", views.about, name="about"),
 ]
