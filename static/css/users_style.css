@@ -3,9 +3,21 @@
     justify-content: center;
 }
 
-.parent>div {
-    align-items: center;
+form {
+    text-align: center;
+}
+
+.form-container {
+    text-align: center;
+}
+
+.form-panel {
     width: 300px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.btn-enter {
+    margin-top: 20px;
 }
