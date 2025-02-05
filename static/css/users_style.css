@@ -1,14 +1,19 @@
-.parent {
-    display: flex;
-    justify-content: center;
+body {
+    margin: 0;
+    padding: 0;
 }
 
-form {
+h3 {
     text-align: center;
 }
 
-.form-container {
+.form {
+    display: inline-block;
     text-align: center;
+}
+
+.btn-enter {
+    margin-top: 20px;
 }
 
 .form-panel {
@@ -18,6 +23,9 @@ form {
     margin-top: 8px;
 }
 
-.btn-enter {
-    margin-top: 20px;
+.outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }

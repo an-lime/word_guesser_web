@@ -11,10 +11,10 @@
 </head>
 
 <body>
-<div>
-    <div class="parent">
-        <div class="form-container">
-            <h3>Авторизация</h3>
+<div class="outer">
+    <div class="parent-form">
+        <h3>Авторизация</h3>
+        <div class="form">
             <form action="{% url "user:login" %}" method="post">
                 <div class="form-panel">
                     <label for="username" class="form-label">Имя пользователя</label>
@@ -25,10 +25,8 @@
                     <input type="password">
                 </div>
                 <button type="submit" class="btn-enter">Войти</button>
-
             </form>
         </div>
-
     </div>
 </div>
 </body>

@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="{% static 'css/users_style.css' %}">
+</head>
+
+<body>
+<div class="outer">
+    <div class="parent-form">
+        <h3>Авторизация</h3>
+        <div class="form">
+            <form action="{% url "user:login" %}" method="post">
+                <div class="form-panel">
+                    <label for="username" class="form-label">Имя пользователя</label>
+                    <input type="text">
+                </div>
+                <div class="form-panel">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password">
+                </div>
+                <div class="form-panel">
+                    <label for="password" class="form-label">Повторите пароль</label>
+                    <input type="password">
+                </div>
+                <button type="submit" class="btn-enter">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
