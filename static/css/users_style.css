@@ -10,6 +10,7 @@ h3 {
 .form {
     display: inline-block;
     text-align: center;
+    width: 300px;
 }
 
 .btn-enter {
@@ -17,7 +18,6 @@ h3 {
 }
 
 .form-panel {
-    width: 300px;
     display: flex;
     justify-content: space-between;
     margin-top: 8px;

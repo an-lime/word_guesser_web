@@ -1,0 +1,25 @@
+{% load static %}
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/errors.css' %}">
+    <title></title>
+</head>
+<body>
+
+<div id="message-container">
+    {% if form.non_field_errors %}
+        <div id="message">
+            Неверный логин или пароль!
+        </div>
+    {% endif %}
+</div>
+
+<script src="{% static 'js/errors.js' %}"></script>
+
+</body>
+</html>
